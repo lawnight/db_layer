@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" "spring-beans-2.0.dtd">
+
+<beans>
+	<description>R</description>
+
+	<!-- 数据库CONFIG -->
+	<import resource="dbconfig.xml" />
+	<!-- 数据库CONFIGEND -->
+
+	<!-- master_dao -->
+	<import resource="master.xml" />
+	<!-- master_dao_end -->
+
+	<!-- slave_log_dao -->
+	<import resource="slave.xml" />
+	<!-- slave_log_dao_end -->
+
+
+
+</beans>

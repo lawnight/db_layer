@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+		<property name="basePackage" value="db2.dao" />
+		<property name="sqlSessionFactoryBeanName" value="master_sqlSessionFactory" />
+		<property name="sqlSessionTemplateBeanName" value="sqlSession" />
+	</bean>
+
+	<!-- <bean id="mapUnitDAO" class="org.mybatis.spring.mapper.MapperFactoryBean"> 
+		<property name="mapperInterface" value="db2.xml.master.MapUnitDAO" /> <property 
+		name="sqlSessionFactory" ref="sqlSessionFactory" /> </bean> -->
+</beans>
